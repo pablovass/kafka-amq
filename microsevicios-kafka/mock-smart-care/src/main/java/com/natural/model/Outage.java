@@ -1,7 +1,8 @@
 package com.natural.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.ToString;
 
 import java.util.ArrayList;
@@ -24,5 +25,4 @@ public class Outage {
 	@JsonProperty("StartTime")
 	public long startTime;
 	public long endTime;
-
 }
