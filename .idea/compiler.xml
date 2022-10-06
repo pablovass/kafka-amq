@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-kafka-cloud" />
+        <module name="demo-kafka-cloud (1)" />
+        <module name="app-kafka-00" />
+        <module name="demo-amq-online" />
+        <module name="app-kafka-streams" />
+        <module name="demo-karafka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app-kafka-00" target="1.8" />
+      <module name="app-kafka-streams" target="1.8" />
+      <module name="demo-amq-online" target="1.8" />
+      <module name="demo-kafka-cloud" target="1.8" />
+      <module name="demo-kafka-cloud (1)" target="1.8" />
+      <module name="demo-karafka" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-amq-online" options="-parameters" />
+      <module name="demo-kafka-cloud" options="-parameters" />
+      <module name="demo-kafka-cloud (1)" options="-parameters" />
+      <module name="demo-karafka" options="-parameters" />
+    </option>
+  </component>
+</project>

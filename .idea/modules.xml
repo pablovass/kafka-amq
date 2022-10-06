@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/KAFKA-AMQ.iml" filepath="$PROJECT_DIR$/.idea/KAFKA-AMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-kafka-00/app-kafka-00.iml" filepath="$PROJECT_DIR$/app-kafka-00/app-kafka-00.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-kafka-streams/app-kafka-streams.iml" filepath="$PROJECT_DIR$/app-kafka-streams/app-kafka-streams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-amq-online/demo-amq-online.iml" filepath="$PROJECT_DIR$/demo-amq-online/demo-amq-online.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-kafka-cloud/demo-kafka-cloud.iml" filepath="$PROJECT_DIR$/demo-kafka-cloud/demo-kafka-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-kafka-cloud-consumer/demo-kafka-cloud (1).iml" filepath="$PROJECT_DIR$/demo-kafka-cloud-consumer/demo-kafka-cloud (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-karafka/demo-karafka.iml" filepath="$PROJECT_DIR$/demo-karafka/demo-karafka.iml" />
+    </modules>
+  </component>
+</project>

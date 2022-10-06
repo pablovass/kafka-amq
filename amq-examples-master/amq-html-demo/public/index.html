@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+    <title>Stock Quote | AMQP Example</title>
+
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/lineo-icon/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../node_modules/@patternfly/patternfly/patternfly.css">
+    
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="../src/styles/styles.scss">
+</head>
+
+<body>
+
+    <div id="site-content">
+        <main class="main-content">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html">Home</a>
+                    <span>Stock</span>
+                </div>
+            </div>
+
+            <div class="page">
+                <div id="accident-app" class="app container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form id="report" class="form-inline pf-c-form pf-m-horizontal">
+                                <div class="form-group pf-c-form__group">
+                                    <label for="stock" class="pf-c-form__label"><span class="pf-c-form__label-text">Stock</span></label>
+                                    <div class="form-group pf-c-form__horizontal-group">
+                                        <input type="text" name="stock" class="form-control pf-c-form-control" id="stock" placeholder="Stock Symbol">
+                                    </div>
+                                </div>
+                                <div class="form-group pf-c-form__group">
+                                    <label for="price" class="pf-c-form__label"><span class="pf-c-form__label-text">Price</span></label>
+                                    <div class="form-group pf-c-form__horizontal-group">
+                                        <input type="text" name="price" class="form-control pf-c-form-control" id="price" placeholder="Stock Price">
+                                    </div>
+                                </div>
+                                <div class="pf-c-form__group pf-m-action">
+                                    <div class="pf-c-form__actions">
+                                        <a id="post" class="pf-c-button pf-m-primary">Send Update</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form id="messages-burst" class="form-inline pf-c-form pf-m-horizontal">
+                                <div class="form-group pf-c-form__group">
+                                    <label for="messages" class="pf-c-form__label"><span class="pf-c-form__label-text">Messages</span></label>
+                                    <div class="form-group pf-c-form__horizontal-group">
+                                        <input type="text" name="messages" class="form-control pf-c-form-control" id="messages" placeholder="# of Messages">
+                                    </div>
+                                </div>
+                                <div class="pf-c-form__group pf-m-action">
+                                    <div class="pf-c-form__actions">
+                                        <a id="burst" class="pf-c-button pf-m-primary">Send Burst</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-8">
+                            <table class="table table-striped pf-c-table pf-m-grid-m" role="grid">
+                                <caption>Latest Stock Information:</caption>
+                                <thead>
+                                    <tr role="row">
+                                        <th role="columnheader" scope="col">Stock Symbol</th>
+                                        <th role="columnheader" scope="col" class='text-right'>Stock Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="latest" role="rowgroup">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+
+    <script src="../src/config/mq_config.js"></script>
+    <script src="../src/rhea-client.js"></script>
+    <script src="../src/app.js"></script>
+
+    <script>
+        var server = config.mq_server;
+
+        client.options.username = config.mq_username;
+        client.options.password = config.mq_password;
+
+        var ws = client.websocket_connect(WebSocket);
+        var connection = client.connect({
+            "connection_details": ws(
+                server,
+                [
+                    "binary",
+                    "AMQPWSB10",
+                    "amqp"
+                ]),
+            "reconnect": false,
+            transport: 'tls',
+            servername: server,
+            rejectUnauthorized: false
+        });
+
+        var sender = connection.open_sender(config.mq_destination);
+
+        client.on("message", function (context) {
+            console.log(context.message);
+            var m = JSON.parse(context.message.body);
+            $("#latest").prepend("<tr><td>" + m.stock + "</td><td class='text-right'>" + m.price + "</td></tr>");
+        });
+        connection.open_receiver(config.mq_destination);
+
+        (function ($) {
+            var items = ["RHT", "MSFT", "AMZN", "GOOG", "HPQ", "IBM"];
+
+            $('#post').click(function () {
+                var text = JSON.stringify($('#report').serializeObject());
+                sender.send({ body: text });
+                setTimeout(function () { alert("messages sent!"); }, 1);
+                $('#stock').val("");
+                $('#price').val("");
+                return false;
+            });
+
+            $('#burst').click(function () {
+                var messages = Number($('#messages').val());
+                for (i = 0; i < messages; i++) {
+                    setTimeout(function () {
+                        var text = '{ "stock": "' + jQuery.rand(items) + '", "price": "' + ((Math.random() * 10.0) + 92).toFixed(2) + '" }';
+                        sender.send({ "body": text });
+                    }, 1000 * i);
+                }
+                setTimeout(function () { alert("messages sent!"); }, 1);
+                $('#messages').val("");
+                return false;
+            });
+
+            $.fn.serializeObject = function() {
+                var o = {};
+                var a = this.serializeArray();
+                $.each(a, function() {
+                    if (o[this.name]) {
+                        if (!o[this.name].push) {
+                            o[this.name] = [o[this.name]];
+                        }
+                        o[this.name].push(this.value || '');
+                    } else {
+                        o[this.name] = this.value || '';
+                    }
+                });
+                return o;
+            };
+
+            $.rand = function(arg) {	
+                if ($.isArray(arg)) {	
+                    return arg[$.rand(arg.length)];	
+                } else if (typeof arg === "number") {	
+                    return Math.floor(Math.random() * arg);	
+                } else {	
+                    return 4;  // chosen by fair dice roll	
+                }	
+            };            
+        })(jQuery);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "amq-html-demo",
+  "version": "1.0.0",
+  "main": "public/index.html",
+  "scripts": {
+    "clean": "rm -rf dist .cache tmp",
+    "format": "prettier src/**/*.ts src/**/*.tsx public/*.html --write",
+    "start:dev": "parcel serve public/*.html",
+    "start": "node index.js",
+    "build": "npm run clean && env NODE_ENV=production parcel build --no-content-hash --no-source-maps public/*.html",
+    "build:dev": "env NODE_ENV=development parcel build public/*.html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@patternfly/patternfly": "^2.71.1",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "parcel-bundler": "^1.12.4",
+    "rhea": "^1.0.20",
+    "sass": "^1.26.3"
+  }
+}

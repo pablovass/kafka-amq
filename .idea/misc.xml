@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app-kafka-00/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-karafka/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-amq-online/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-kafka-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/app-kafka-streams/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-kafka-cloud-consumer/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
