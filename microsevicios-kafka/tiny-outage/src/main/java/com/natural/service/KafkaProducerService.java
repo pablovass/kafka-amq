@@ -14,7 +14,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 public class KafkaProducerService {
 
-	private static final String TOPIC = "outage";
+	private static final String TOPIC = "user";
 
 	@Autowired
 	private KafkaTemplate<String, Outage> kafkaTemplate;

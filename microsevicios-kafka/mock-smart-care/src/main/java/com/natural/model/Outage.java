@@ -9,10 +9,6 @@ import java.util.ArrayList;
 
 @Data @ToString
 public class Outage {
-
-	private String id;
-	@JsonProperty("SiteName")
-	public String siteName;
 	@JsonProperty("RAT")
 	public String rAT;
 	@JsonProperty("QueryType")

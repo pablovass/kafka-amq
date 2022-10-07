@@ -15,5 +15,6 @@ public interface StreamBindings {
 
 	@Output("order-homedelivery-output-channel")
 	KStream<String, Outage> homeDeliveryStream();
-
+	@Output("order-user-output-channel")
+	KStream<String, Outage> userStream();
 }

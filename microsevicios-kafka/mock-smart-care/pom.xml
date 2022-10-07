@@ -8,10 +8,10 @@
 		<version>2.5.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.fullstackmaina.streamService</groupId>
-	<artifactId>kafkaStreamService</artifactId>
+	<groupId>com.natural</groupId>
+	<artifactId>mock-smart-care</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kafkaStreamService</name>
+	<name>mock-smart-care</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -31,10 +31,12 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-kafka-streams</artifactId>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
