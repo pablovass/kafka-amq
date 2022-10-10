@@ -1,24 +1,24 @@
 package com.natural.controller;
 
 import com.natural.model.Outage;
-import com.natural.producer.SpringBootKafkaProducer;
+import com.natural.producer.KafkaProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class SpringBootKafkaRestController {
+public class KafkaRestController {
 
     @Autowired
-    SpringBootKafkaProducer springBootKafkaProducer;
+    KafkaProducer kafkaProducer;
 
     @GetMapping(value = "/send/{message}")
     public void send(@PathVariable String message) {
-        springBootKafkaProducer.sendMessage(message);
+        kafkaProducer.sendMessage(message);
     }
 
     @PostMapping(value = "/send")
     public void send(@RequestBody Outage outage) {
-        springBootKafkaProducer.sendMessage(outage);
+        kafkaProducer.sendMessage(outage);
     }
 
 }

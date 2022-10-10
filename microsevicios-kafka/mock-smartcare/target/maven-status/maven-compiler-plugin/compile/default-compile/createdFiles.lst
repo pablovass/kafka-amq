@@ -1,0 +1,5 @@
+com/natural/producer/KafkaProducer$1.class
+com/natural/consumer/KafkaConsumer.class
+com/natural/producer/KafkaProducer$2.class
+com/natural/producer/KafkaProducer.class
+com/natural/controller/KafkaRestController.class

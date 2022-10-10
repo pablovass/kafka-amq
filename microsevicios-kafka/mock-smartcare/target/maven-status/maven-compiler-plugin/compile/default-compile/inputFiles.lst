@@ -1,0 +1,6 @@
+/home/pablo/dev/java/kafka-amq/microsevicios-kafka/mock-smartcare/src/main/java/com/natural/Application.java
+/home/pablo/dev/java/kafka-amq/microsevicios-kafka/mock-smartcare/src/main/java/com/natural/consumer/KafkaConsumer.java
+/home/pablo/dev/java/kafka-amq/microsevicios-kafka/mock-smartcare/src/main/java/com/natural/controller/KafkaRestController.java
+/home/pablo/dev/java/kafka-amq/microsevicios-kafka/mock-smartcare/src/main/java/com/natural/config/Config.java
+/home/pablo/dev/java/kafka-amq/microsevicios-kafka/mock-smartcare/src/main/java/com/natural/model/Outage.java
+/home/pablo/dev/java/kafka-amq/microsevicios-kafka/mock-smartcare/src/main/java/com/natural/producer/KafkaProducer.java
