@@ -1,7 +1,7 @@
-package com.vishaluplanch.kafka.controller;
+package com.natural.controller;
 
-import com.vishaluplanch.kafka.model.Outage;
-import com.vishaluplanch.kafka.producer.SpringBootKafkaProducer;
+import com.natural.model.Outage;
+import com.natural.producer.SpringBootKafkaProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

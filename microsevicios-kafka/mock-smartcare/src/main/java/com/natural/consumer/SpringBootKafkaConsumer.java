@@ -1,6 +1,6 @@
-package com.vishaluplanch.kafka.consumer;
+package com.natural.consumer;
 
-import com.vishaluplanch.kafka.model.Outage;
+import com.natural.model.Outage;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d49e2dd2-bc24-4ca0-af2a-57a9403cd91e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/consumer/SpringBootKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/consumer/SpringBootKafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/controller/SpringBootKafkaRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/controller/SpringBootKafkaRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/model/Outage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/model/Outage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/producer/SpringBootKafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/config/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/consumer/SpringBootKafkaConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/consumer/SpringBootKafkaConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/controller/SpringBootKafkaRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/controller/SpringBootKafkaRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/model/Outage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FwV4WE32CmUr1aaP4XTJpL30tq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/pablo/dev/java/kafka-amq/microsevicios-kafka/spring-kafka-msg-producer-consumer/pom.xml",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.natural.Application" />
+      <module name="mock-smartcare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.natural.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.natural.Application" />
+      <module name="tiny-outage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.natural.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.natural.MockApplication" />
+      <module name="mock-smart-care" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.natural.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sacavix.NotificationsApplication" />
+      <module name="notifications" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sacavix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.vishaluplanch.kafka.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vishaluplanch.kafka.Application" />
+      <module name="mock-smartcare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vishaluplanch.kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="Application.com.vishaluplanch.kafka.Application" />
+        <item itemvalue="Application.MockApplication" />
+        <item itemvalue="Application.NotificationsApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d49e2dd2-bc24-4ca0-af2a-57a9403cd91e" name="Changes" comment="" />
+      <created>1665402943851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665402943851</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

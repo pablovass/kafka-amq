@@ -1,4 +1,4 @@
-package com.vishaluplanch.kafka.model;
+package com.natural.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

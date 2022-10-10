@@ -1,6 +1,6 @@
-package com.vishaluplanch.kafka.config;
+package com.natural.config;
 
-import com.vishaluplanch.kafka.model.Outage;
+import com.natural.model.Outage;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.context.annotation.Bean;

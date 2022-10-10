@@ -1,6 +1,6 @@
-package com.vishaluplanch.kafka.producer;
+package com.natural.producer;
 
-import com.vishaluplanch.kafka.model.Outage;
+import com.natural.model.Outage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
