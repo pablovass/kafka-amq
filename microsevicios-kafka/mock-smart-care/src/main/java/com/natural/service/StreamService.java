@@ -14,23 +14,13 @@ import org.springframework.stereotype.Service;
 @Log4j2
 public class StreamService {
 
-	@StreamListener("order-input-channel")
-	@SendTo("order-takeaway-output-channel")
-	public KStream<String, Outage> takeAway(KStream<String, Outage> order) {
-		log.info("Order object is {}", order);
-		return order.filter((k,v)-> v.getRAT().equalsIgnoreCase("takeaway"));
-	}
+
 
 	@StreamListener("order-input-channel")
-	@SendTo("order-homedelivery-output-channel")
-	public KStream<String, Outage> homeDelivery(KStream<String, Outage> order) {
+	@SendTo("order-outage-output-channel")
+	public KStream<String, Outage> outageKStream(KStream<String, Outage> order) {
 		log.info("Order object is {}", order);
-		return order.filter((k,v)-> v.getRAT().equalsIgnoreCase("homedelivery"));
+		return order.filter((k,v)-> v.getRAT().equalsIgnoreCase("outage"));
 	}
-	@StreamListener("order-input-channel")
-	@SendTo("order-user-output-channel")
-	public KStream<String, Outage> user(KStream<String, Outage> outage) {
-		log.info("Order object is {}", outage);
-		return outage.filter((k,v)-> v.getRAT().equalsIgnoreCase("user"));
-	}
+
 }

@@ -10,11 +10,9 @@ public interface StreamBindings {
 	@Input("order-input-channel")
 	KStream<String, Outage> inputStream();
 
-	@Output("order-takeaway-output-channel")
-	KStream<String, Outage> takeAwayStream();
 
-	@Output("order-homedelivery-output-channel")
-	KStream<String, Outage> homeDeliveryStream();
-	@Output("order-user-output-channel")
-	KStream<String, Outage> userStream();
+	@Output("order-outage-output-channel")
+	KStream<String, Outage> outageStream();
+
+
 }
