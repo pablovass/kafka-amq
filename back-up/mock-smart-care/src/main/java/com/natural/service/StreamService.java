@@ -15,12 +15,10 @@ import org.springframework.stereotype.Service;
 public class StreamService {
 
 
-
 	@StreamListener("order-input-channel")
-	@SendTo("order-outage-output-channel")
-	public KStream<String, Outage> outageKStream(KStream<String, Outage> order) {
-		log.info("Order object is {}", order);
-		return order.filter((k,v)-> v.getRAT().equalsIgnoreCase("outage"));
+	@SendTo("order-user-output-channel")
+	public KStream<String, Outage> user(KStream<String, Outage> outage) {
+		log.info("Order object is {}", outage);
+		return outage.filter((k,v)-> v.getRAT().equalsIgnoreCase("user"));
 	}
-
 }
