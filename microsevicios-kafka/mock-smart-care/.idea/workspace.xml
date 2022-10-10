@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d49e2dd2-bc24-4ca0-af2a-57a9403cd91e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/consumer/SpringBootKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/consumer/SpringBootKafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/controller/SpringBootKafkaRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/controller/SpringBootKafkaRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/model/Outage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/model/Outage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/java/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/producer/SpringBootKafkaProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/config/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/consumer/SpringBootKafkaConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/consumer/SpringBootKafkaConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/controller/SpringBootKafkaRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/controller/SpringBootKafkaRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/model/Outage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-kafka-msg-producer-consumer/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/vishaluplanch/kafka/producer/SpringBootKafkaProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
