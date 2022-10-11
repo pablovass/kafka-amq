@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d49e2dd2-bc24-4ca0-af2a-57a9403cd91e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/controller/AlarmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/model/AffectedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/model/Alarm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/repository/AlarmRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/repository/OutageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/service/AlarmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/service/AlarmServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/service/OutageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/service/OutageServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/consumer/SpringBootKafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/consumer/KafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/controller/SpringBootKafkaRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/controller/KafkaRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/producer/SpringBootKafkaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/producer/KafkaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/consumer/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/consumer/KafkaConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/controller/KafkaRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/model/Outage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/model/Outage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/src/main/java/com/natural/producer/KafkaProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/consumer/KafkaConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/consumer/KafkaConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/consumer/SpringBootKafkaConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/controller/KafkaRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/controller/SpringBootKafkaRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/model/Outage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/model/Outage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/producer/KafkaProducer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/producer/KafkaProducer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/producer/KafkaProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/producer/SpringBootKafkaProducer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/producer/SpringBootKafkaProducer$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mock-smartcare/target/classes/com/natural/producer/SpringBootKafkaProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tiny-outage/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../tiny-outage/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -124,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Application (1)" />
         <item itemvalue="Application.com.vishaluplanch.kafka.Application" />
         <item itemvalue="Application.MockApplication" />
         <item itemvalue="Application.NotificationsApplication" />

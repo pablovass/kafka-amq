@@ -1,2 +1,7 @@
-package com.natural.service;public class OutageService {
+package com.natural.service;
+
+import com.natural.model.Outage;
+
+public interface OutageService {
+    public Outage createOutage(Outage outage);
 }

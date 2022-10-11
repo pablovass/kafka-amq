@@ -7,7 +7,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MyKafkaConsumer {
+public class KafkaConsumer {
     @Autowired
     OutageService outageService;
 
@@ -17,7 +17,8 @@ public class MyKafkaConsumer {
 
     @KafkaListener(topics = "${topic.name}", containerFactory = "kafkaListenerContainerFactory")
     public void listen(Outage value) {
-        createOutageBD(value);
+
+       createOutageBD(value);
 
         System.out.println("Message Received :: " + value.toString());
     }
