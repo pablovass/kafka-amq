@@ -4,14 +4,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 @Data
 @AllArgsConstructor
 @Builder
-@Document(collection = "Alarm")
+
 public class Alarm implements Serializable {
     @JsonProperty("SiteName")
     public String siteName;

@@ -1,11 +1,13 @@
 package com.natural.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.beans.Transient;
 import java.util.ArrayList;
 @Data
 
@@ -23,4 +25,10 @@ public class Outage {
     @JsonProperty("StartTime")
     public long startTime;
     public long endTime;
+
+    @JsonIgnore
+    //@Transient
+    private Alarm alarm;
+    @JsonIgnore
+    private  AffectedUser affectedUser;
 }

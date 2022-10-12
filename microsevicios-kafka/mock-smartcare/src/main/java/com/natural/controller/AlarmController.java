@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin
+@RestController
+@RequestMapping("/api/v1")
 public class AlarmController {
     Alarm alarm;
     List<Alarm> alarms = new ArrayList<>();
@@ -19,18 +22,9 @@ public class AlarmController {
 
 
     @GetMapping("/alarm")
-    public ResponseEntity<List<Alarm>> listAlarm(@RequestParam(name = "returnCode", required = false) String returnCode) {
+    public ResponseEntity<List<Alarm>> listAlarm() {
 
-        if (!returnCode.equals(null)) {
-            alarms = alarmService.listAllAlarm();
-        }
-        if (alarms.isEmpty()) {
-            return ResponseEntity.noContent().build();
-        } else {
-            alarms = alarmService.getReturnCode(returnCode);
-
-        }
-
+        alarms = alarmService.listAllAlarm();
 
         return ResponseEntity.ok(alarms);
     }
@@ -50,18 +44,6 @@ public class AlarmController {
         return ResponseEntity.ok(alarms);
     }
 
-    @GetMapping("/alarm/{retcode}/{siteName}")
-    public ResponseEntity<List<Alarm>> getByRetCodeAndSiteName(@PathVariable(value = "retCode") String retCode,
-                                                               @PathVariable(value = "siteName") String deparment) {
-        alarms = alarmService.getByRetCodeAndSiteName(retCode, deparment);
-        return ResponseEntity.ok(alarms);
-    }
-
-    @GetMapping("/alarm/{mSISDN}")
-    public ResponseEntity<List<Alarm>> getByMSISDNIs(@PathVariable(value = "mSISDN") String mSISDN) {
-        alarms = alarmService.getByMSISDNIs(mSISDN);
-        return ResponseEntity.ok(alarms);
-    }
 
     @RequestMapping("/alarm")
     ResponseEntity<Alarm> giveAlarm(@RequestBody Alarm alarm) {

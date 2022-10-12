@@ -3,6 +3,7 @@ package com.natural.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
+import java.beans.Transient;
 import java.util.ArrayList;
 
 @Data
@@ -22,4 +23,8 @@ public class Outage {
 	public long startTime;
 	public long endTime;
 
+	//@Transient
+	private Alarm alarm;
+	//@Transient
+	private AffectedUser affectedUser;
 }

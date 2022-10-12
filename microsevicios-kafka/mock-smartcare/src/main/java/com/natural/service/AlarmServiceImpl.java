@@ -34,8 +34,8 @@ public class AlarmServiceImpl implements AlarmService {
     }
 
     @Override
-    public Alarm getAlarmBySiteName(String name) {
-        return null;
+    public Alarm getAlarmBySiteName(String siteName) {
+         return alarmRepository.findBySiteName(siteName);
     }
 
     @Override
