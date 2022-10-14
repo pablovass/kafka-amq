@@ -23,6 +23,8 @@ public class Outage implements Serializable {
 	public String queryType;
 	@JsonProperty("SiteCode")
 	public String siteCode;
+	@JsonProperty("SiteName")
+	public String siteName;
 	@JsonProperty("CellName")
 	public ArrayList<String> cellName;
 

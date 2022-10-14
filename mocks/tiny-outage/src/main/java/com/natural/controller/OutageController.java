@@ -25,14 +25,14 @@ public class OutageController {
     List<Alarm> alarms = new ArrayList<>();
     Alarm alarm;
 
-    @RequestMapping("/alarm")
+    @PostMapping("/alarm")
     ResponseEntity<Alarm> order(@RequestBody Outage outage) {
         kafkaProducerService.send(outage);
         alarm=outageAlarm.giveAlarm(outage);
         return ResponseEntity.ok(alarm);
     }
 
-    @GetMapping("/alarms")
+    @GetMapping("/alarm")
     public ResponseEntity<List<Alarm>> listAlarm() {
          alarms =  outageAlarm.listAlarm();
         return ResponseEntity.ok(alarms);

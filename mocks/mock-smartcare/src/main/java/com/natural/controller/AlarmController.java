@@ -1,6 +1,7 @@
 package com.natural.controller;
 
 import com.natural.model.Alarm;
+import com.natural.model.Outage;
 import com.natural.service.AlarmService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +17,13 @@ import java.util.List;
 @RequestMapping("/api/v1")
 public class AlarmController {
     Alarm alarm;
+    Outage outage;
     List<Alarm> alarms = new ArrayList<>();
     @Autowired
     private AlarmService alarmService;
 
 
-    @GetMapping("/alarms")
+    @GetMapping("/alarm")
     public ResponseEntity<List<Alarm>> listAlarm() {
 
         alarms = alarmService.listAllAlarm();
@@ -45,9 +47,9 @@ public class AlarmController {
     }
 
 
-    @RequestMapping("/alarm")
-    ResponseEntity<Alarm> giveAlarm(@RequestBody Alarm alarm) {
-        String bodySiteName = alarm.siteName;
+    @PostMapping("/alarm")
+    ResponseEntity<Alarm> giveAlarm(@RequestBody Outage outage) {
+        String bodySiteName = outage.siteName;
         alarm = alarmService.getAlarmBySiteName(bodySiteName);
         if (null == alarm) {
             return ResponseEntity.notFound().build();
